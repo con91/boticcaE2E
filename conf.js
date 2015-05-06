@@ -1,7 +1,7 @@
 exports.config = {
 
     // The address of a running selenium server.
-    // seleniumAddress: 'http://localhost:4444/wd/hub',
+    seleniumAddress: 'http://localhost:4444/wd/hub',
 
     capabilities: {
         browserName: 'chrome',
@@ -19,23 +19,20 @@ exports.config = {
 
     suites: {
         application: './application/application.spec.js',
+        homepage: './homepage/homepage.spec.js'
         
     },
 
-    framework: 'jasmine',
 
-    baseUrl: 'http://boticca.com',
+    baseUrl: 'https://boticca.com',
 
-      // The address of a running selenium server.
-    seleniumAddress: 'http://localhost:4444/wd/hub',
 
     onPrepare: function () {
 
+
         browser.driver.manage().window().setSize(1280, 900);
 
-        // ignore angularjs
-        //browser.ignoreSynchronization = true;
-
+        browser.ignoreSynchronization = true;
         // Just be aware that implicitWait changes the amount of time it gives findElement to
         // find an element GLOBALLY (ie for everything thereafter). It's defaulted to 0 so I would
         // recommend setting a value for whatever you are having issues with and reset it to 0 afterwards.

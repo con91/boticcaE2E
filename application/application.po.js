@@ -17,13 +17,16 @@ var Application = function () {
 Application.prototype.get = function () {
 
     //propose a change to make browser.get more generic to run across all our environments e.g. httpster runs a folder on localhost:3333
-    browser.get('https://boticca.com');
+    browser.get('https://boticca-02.qa-com');
 
     // Always sleep on application load to allow for bootstrapping and data loading.
     // This may need to be increased with larger data sets/slow networks?
     browser.driver.sleep(2000);
 };
 
+Application.prototype.halt = function ()  {
+    browser.driver.sleep(8000);
+};
 
 Application.prototype.wait = function (ms) {
     return browser.wait(function () {
