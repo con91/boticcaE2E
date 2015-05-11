@@ -9,6 +9,15 @@ describe('Application', function() {
         expect(app.applicationLogo.isPresent()).toBe(true);
     });
 
+    it('should display the Nav bar', function () {
+        expect(app.navBar.isPresent()).toBe(true);
+    });
+
+    // it('should display a fullScreenImage', function () {
+    //     expect(app.fullScreenImage.isPresent()).toBe(true);
+    // });
+
+
     
     
 });

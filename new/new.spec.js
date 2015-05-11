@@ -5,9 +5,10 @@ var BrowsePage = require('./browse/browse.po.js');
 describe('New page', function () {
 
     var app = new Application();
+    var newPage = new NewPage();
     app.get();
 
-    var newPage = new NewPage();
+    
 
 
 });

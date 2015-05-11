@@ -7,8 +7,11 @@ var Application = function () {
 
     this.body = element(by.tagName('body'));
     this.applicationLogo = element(by.css('.icon-logo'));
-    
+    this.navBar = element(by.css('.navbar'));
+    this.fullScreenImage = element(by.css('.fullscreen-image'));
 };
+    
+
 
 /**
  * Specify the url of the application you want to test.
@@ -17,7 +20,7 @@ var Application = function () {
 Application.prototype.get = function () {
 
     //propose a change to make browser.get more generic to run across all our environments e.g. httpster runs a folder on localhost:3333
-    browser.get('https://boticca-02.qa-com');
+    browser.get('https://boticca.com');
 
     // Always sleep on application load to allow for bootstrapping and data loading.
     // This may need to be increased with larger data sets/slow networks?
@@ -25,14 +28,9 @@ Application.prototype.get = function () {
 };
 
 Application.prototype.halt = function ()  {
-    browser.driver.sleep(8000);
+    browser.driver.sleep(8000); 
 };
 
-Application.prototype.wait = function (ms) {
-    return browser.wait(function () {
-        return true;
-    }, ms);
-};
 
 
 module.exports = Application;
