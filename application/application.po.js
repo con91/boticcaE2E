@@ -8,7 +8,8 @@ var Application = function() {
 	this.body = element(by.tagName('body'));
 	this.applicationLogo = element(by.css('.icon-logo'));
 	this.navBar = element(by.css('.navbar'));
-	// this.fullScreenImage = element(by.css('.fullscreen-image'));
+	this.primarylinks = element.all(by.css('.primary-links li'));
+	
 };
 
 

@@ -55,10 +55,10 @@
     suites: {
       application: './application/application.spec.js',
       homepage: './homepage/homepage.spec.js',
-      newIn: './new/new.spec.js',
+      newIn: './newIn/newIn.spec.js',
       browse: './browse/browse.spec.js',
       search: './search/search.spec.js',
-      stories: './stories/stories.spec.js',
+      stories: './stories/storiesPage.spec.js',
       designers: './designers/designers.spec.js',
       privateSales: './privateSales/privateSales.spec.js'
 
