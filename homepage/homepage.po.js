@@ -1,4 +1,4 @@
-var HomePage = function () {
+var HomePage = function() {
 
 	this.fullScreenImage = element(by.css('.fullscreen-image'));
 };
