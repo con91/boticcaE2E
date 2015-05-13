@@ -8,8 +8,11 @@ var Application = function() {
 	this.body = element(by.tagName('body'));
 	this.applicationLogo = element(by.css('.icon-logo'));
 	this.navBar = element(by.css('.navbar'));
-	this.primarylinks = element.all(by.css('.primary-links li'));
-	
+	var primaryLinks = element.all(by.css('.primary-links li'));
+	var primaryLinksList = primaryLinks.all(by.css('.primary-links li'));
+	this.navBarRight = element(by.css('.navbar-right'));
+	this.searchBtn = element(by.id('search-btn'));
+
 };
 
 
