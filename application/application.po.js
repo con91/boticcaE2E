@@ -8,10 +8,12 @@ var Application = function() {
 	this.body = element(by.tagName('body'));
 	this.applicationLogo = element(by.css('.icon-logo'));
 	this.navBar = element(by.css('.navbar'));
-	var primaryLinks = element.all(by.css('.primary-links li'));
-	var primaryLinksList = primaryLinks.all(by.css('.primary-links li'));
+	var primaryLinks = element.all(by.css('.primary-links'));
 	this.navBarRight = element(by.css('.navbar-right'));
-	this.searchBtn = element(by.id('search-btn'));
+	this.searchBtn = element(by.id('topnav+search'));
+	this.footer = element(by.css('.footer'));
+
+
 
 };
 

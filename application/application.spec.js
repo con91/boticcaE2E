@@ -13,6 +13,18 @@ describe('Application', function() {
 		expect(app.navBar.isPresent()).toBe(true);
 	});
 
+	it('should display a navbar right', function() {
+		expect(app.navBarRight.isPresent()).toBe(true);
+	});
 
+		it('should display a search button', function() {
+		expect(app.searchBtn.isPresent()).toBe(true);
+	});
+
+		
+
+	it('should display a footer', function() {
+		expect(app.footer.isPresent()).toBe(true);
+	});
 
 });
