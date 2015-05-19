@@ -10,7 +10,6 @@ var HomePage = function() {
 	this.featuredProducts = element.all(by.repeater('product in products'));
 
 
-
 };
 
 module.exports = HomePage;

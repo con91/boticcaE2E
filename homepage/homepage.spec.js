@@ -8,14 +8,6 @@ describe('Homepage', function() {
 	app.get();
 
 
-	it('should display a navbar', function() {
-		expect(app.navBar.isPresent()).toBe(true);
-	});
-
-	it('should display the primary links on the navbar', function() {
-		expect(app.primaryLinks.isPresent()).toBe(true);
-	});
-
 	it('should display the full screen image', function() {
 		expect(homePage.fullScreenImage.isPresent()).toBe(true);
 	});

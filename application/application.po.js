@@ -6,13 +6,19 @@
 var Application = function() {
 
 	this.body = element(by.tagName('body'));
+	//Navbar Locators left & Centre
 	this.applicationLogo = element(by.css('.icon-logo'));
 	this.navBar = element(by.css('.navbar'));
-	var primaryLinks = element.all(by.css('.primary-links'));
+	//Navbar right locators
 	this.navBarRight = element(by.css('.navbar-right'));
-	this.searchBtn = element(by.id('topnav+search'));
+	this.searchIcon = element(by.id('topnav+search'));
+	this.loggedOut = element(by.css('.icon.icon-2x.icon-loggedout'));
+	this.loggedIn = element(by.css('.icon.icon-2x.icon-loggedin'));
+	this.currenciesIcon = element(by.id('topnav+currencies'));
+	this.currencies = element.all(by.repeater('currency in currencies'));
+	this.cartIcon = element(by.css('.icon.icon-cart'));
+	//Footer locators
 	this.footer = element(by.css('.footer'));
-
 
 
 };

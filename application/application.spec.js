@@ -17,11 +17,21 @@ describe('Application', function() {
 		expect(app.navBarRight.isPresent()).toBe(true);
 	});
 
-		it('should display a search button', function() {
-		expect(app.searchBtn.isPresent()).toBe(true);
+	it('should display a search icon', function() {
+		expect(app.searchIcon.isPresent()).toBe(true);
 	});
 
-		
+	it('should display a currency icon', function() {
+		expect(app.currenciesIcon.isPresent()).toBe(true);
+	});
+
+	it('should display four currencies', function() {
+		expect(app.currencies.count()).toEqual(4);
+	});
+
+	it('should display a cart icon', function() {
+		expect(app.cartIcon.isPresent()).toBe(true);
+	});
 
 	it('should display a footer', function() {
 		expect(app.footer.isPresent()).toBe(true);
