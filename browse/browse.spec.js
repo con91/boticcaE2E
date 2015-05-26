@@ -16,5 +16,7 @@ describe('Browse page', function() {
 		expect(browsePage.browseSearchField.isPresent()).toBe(true);
 	});
 
+	it('should display eight categories', function() {
+		expect(app.categories.count()).toEqual(8);
 
 });
