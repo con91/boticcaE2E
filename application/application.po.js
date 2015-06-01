@@ -59,6 +59,15 @@ Application.prototype.halt = function() {
 	browser.driver.sleep(2000);
 };
 
+Application.prototype.selectDropdownbyNum = function(element, optionNum) {
+	if (optionNum) {
+		var options = element.findElements(by.tagName('option'))
+			.then(function(options) {
+				options[optionNum].click();
+			});
+	}
+};
+
 
 
 module.exports = Application;
