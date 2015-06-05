@@ -620,6 +620,7 @@ describe('Browse page', function() {
 		expect(browser.getCurrentUrl()).toContain('/browse/#!/Accessories/Brooches');
 		expect(browsePage.selectedFacets.getText()).toEqual('/ Brooches');
 	});
-
+	
+	
 
 });

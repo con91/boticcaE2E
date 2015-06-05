@@ -5,6 +5,7 @@ var BrowsePage = function() {
 	// this.sortOptionFirst = element(by.model('sortOption')).first();
 	this.categories = element.all(by.repeater('category in categories'));
 	this.selectedFacets = element(by.binding('currentlySelectedFacets.subcategory'));
+	this.products = element(by.repeater('product in products'));
 
 	//Category locators
 	this.necklaces = element.all(by.repeater('category in categories').row(0));
@@ -32,25 +33,25 @@ var BrowsePage = function() {
 
 	//option values
 	this.option1 = element(by.css('option[value="1"]'));
-	this.option1 = element(by.css('option[value="2"]'));
-	this.option1 = element(by.css('option[value="3"]'));
-	this.option1 = element(by.css('option[value="4"]'));
-	this.option1 = element(by.css('option[value="5"]'));
-	this.option1 = element(by.css('option[value="6"]'));
-	this.option1 = element(by.css('option[value="7"]'));
-	this.option1 = element(by.css('option[value="8"]'));
-	this.option1 = element(by.css('option[value="9"]'));
-	this.option1 = element(by.css('option[value="10"]'));
-	this.option1 = element(by.css('option[value="11"]'));
-	this.option1 = element(by.css('option[value="12"]'));
-	this.option1 = element(by.css('option[value="13"]'));
-	this.option1 = element(by.css('option[value="14"]'));
-	this.option1 = element(by.css('option[value="15"]'));
-	this.option1 = element(by.css('option[value="16"]'));
-	this.option1 = element(by.css('option[value="17"]'));
-	this.option1 = element(by.css('option[value="18"]'));
-	this.option1 = element(by.css('option[value="19"]'));
-	this.option1 = element(by.css('option[value="20"]'));
+	this.option2 = element(by.css('option[value="2"]'));
+	this.option3 = element(by.css('option[value="3"]'));
+	this.option4 = element(by.css('option[value="4"]'));
+	this.option5 = element(by.css('option[value="5"]'));
+	this.option6 = element(by.css('option[value="6"]'));
+	this.option7 = element(by.css('option[value="7"]'));
+	this.option8 = element(by.css('option[value="8"]'));
+	this.option9 = element(by.css('option[value="9"]'));
+	this.option10 = element(by.css('option[value="10"]'));
+	this.option11 = element(by.css('option[value="11"]'));
+	this.option12 = element(by.css('option[value="12"]'));
+	this.option13 = element(by.css('option[value="13"]'));
+	this.option14 = element(by.css('option[value="14"]'));
+	this.option15 = element(by.css('option[value="15"]'));
+	this.option16 = element(by.css('option[value="16"]'));
+	this.option17 = element(by.css('option[value="17"]'));
+	this.option18 = element(by.css('option[value="18"]'));
+	this.option19 = element(by.css('option[value="19"]'));
+	this.option20 = element(by.css('option[value="20"]'));
 };
 
 
