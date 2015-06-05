@@ -20,7 +20,6 @@ var Application = function() {
 	//Footer locators
 	this.footer = element(by.css('.footer'));
 
-
 };
 
 //E2E application wide functions
@@ -29,6 +28,7 @@ Application.prototype.get = function() {
 	//gets the boticca homepage called by app.get();
 	browser.get('https://boticca.com');
 };
+
 
 //get the browse page directly calling it in your spec
 Application.prototype.getBrowse = function() {
@@ -56,7 +56,7 @@ Application.prototype.getPrivateSales = function() {
 
 
 Application.prototype.halt = function() {
-	browser.driver.sleep(2000);
+	browser.driver.sleep(1000);
 };
 
 Application.prototype.selectDropdownbyNum = function(element, optionNum) {
