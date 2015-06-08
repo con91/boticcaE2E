@@ -1,12 +1,21 @@
-var BrowsePage = function() {
-
-	this.searchBar = element(by.css('.search-bar'));
-	this.sortOption = element(by.model('sortOption'));
-	// this.sortOptionFirst = element(by.model('sortOption')).first();
+/* global Results */
+var BrowsePage = function () {
+	//Most popular - a-z sort
+	this.azSort = element(by.id('browse+sort-date'));
+	//No of results sort
+	this.sortResultsNo = element(by.id('browse+show-results'));
+	this.twentyFourItems = element(by.id('browse+show-results')).$('[value="0"]');
+	this.thirtySixItems = element(by.id('browse+show-results')).$('[value="1"]');
+	this.fourtyEightItems = element(by.id('browse+show-results')).$('[value="2"]');
+	this.sixtyItems = element(by.id('browse+show-results')).$('[value="3"]');
+	
 	this.categories = element.all(by.repeater('category in categories'));
 	this.selectedFacets = element(by.binding('currentlySelectedFacets.subcategory'));
-	this.products = element(by.repeater('product in products'));
+	this.products = element.all(by.repeater('product in products'));
+	this.searchBar = element(by.css('.search-bar'));
 
+	
+	
 	//Category locators
 	this.necklaces = element.all(by.repeater('category in categories').row(0));
 	this.earrings = element.all(by.repeater('category in categories').row(1));
@@ -18,6 +27,9 @@ var BrowsePage = function() {
 	this.accessories = element.all(by.repeater('category in categories').row(7));
 	this.allItems = element(by.css('.all-items-title'));
 	this.showMore = element(by.css('.subcategory.show-more'));
+	
+	
+
 	
 	//sub-category in sub-categories locators
 	this.row0 = element.all(by.repeater('subCategory in subCategories').row(0));
@@ -32,6 +44,7 @@ var BrowsePage = function() {
 	this.row9 = element.all(by.repeater('subCategory in subCategories').row(9));
 
 	//option values
+	this.option0 = element(by.css('option[value="0"]'));
 	this.option1 = element(by.css('option[value="1"]'));
 	this.option2 = element(by.css('option[value="2"]'));
 	this.option3 = element(by.css('option[value="3"]'));
@@ -56,60 +69,70 @@ var BrowsePage = function() {
 
 
 
-BrowsePage.prototype.get = function() {
+BrowsePage.prototype.get = function () {
 
 	browser.get('https://boticca-04.dev-com/browse/');
 };
 
-BrowsePage.prototype.results12 = function() {
+BrowsePage.prototype.results12 = function () {
 
 };
 
-BrowsePage.prototype.halt = function() {
+BrowsePage.prototype.halt = function () {
 	browser.driver.sleep(2000);
 };
 
-BrowsePage.prototype.earringsCheck = function() {
+BrowsePage.prototype.earringsCheck = function () {
 	this.allItems.click();
 	this.earrings.click();
 	this.halt();
 };
 
-BrowsePage.prototype.braceletsCheck = function() {
+BrowsePage.prototype.braceletsCheck = function () {
 	this.allItems.click();
 	this.bracelets.click();
 	this.halt();
 };
 
-BrowsePage.prototype.ringsCheck = function() {
+BrowsePage.prototype.ringsCheck = function () {
 	this.allItems.click();
 	this.rings.click();
 	this.halt();
 };
 
-BrowsePage.prototype.bagsCheck = function() {
+BrowsePage.prototype.bagsCheck = function () {
 	this.allItems.click();
 	this.bags.click();
 	this.halt();
 };
 
-BrowsePage.prototype.scarvesCheck = function() {
+BrowsePage.prototype.scarvesCheck = function () {
 	this.allItems.click();
 	this.scarves.click();
 	this.halt();
 };
 
-BrowsePage.prototype.hatsCheck = function() {
+BrowsePage.prototype.hatsCheck = function () {
 	this.allItems.click();
 	this.hats.click();
 	this.halt();
 };
 
-BrowsePage.prototype.accessoriesCheck = function() {
+BrowsePage.prototype.accessoriesCheck = function () {
 	this.allItems.click();
 	this.accessories.click();
 	this.halt();
 };
+
+function selectDropdownByNumber(element, index, milliseconds) {
+    element.findElements(by.tagName('option'))
+      .then(function(options) {
+        options[index].click();
+      });
+    if (typeof milliseconds !== 'undefined') {
+      browser.sleep(milliseconds);
+   }
+}
 
 
 
