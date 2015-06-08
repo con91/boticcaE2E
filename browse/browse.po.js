@@ -8,11 +8,11 @@ var BrowsePage = function () {
 	this.thirtySixItems = element(by.id('browse+show-results')).$('[value="1"]');
 	this.fourtyEightItems = element(by.id('browse+show-results')).$('[value="2"]');
 	this.sixtyItems = element(by.id('browse+show-results')).$('[value="3"]');
-	
 	this.categories = element.all(by.repeater('category in categories'));
 	this.selectedFacets = element(by.binding('currentlySelectedFacets.subcategory'));
 	this.products = element.all(by.repeater('product in products'));
 	this.searchBar = element(by.css('.search-bar'));
+	this.renfinedBy = element(by.css('.refined-tags-container'))
 
 	
 	
@@ -43,28 +43,6 @@ var BrowsePage = function () {
 	this.row8 = element.all(by.repeater('subCategory in subCategories').row(8));
 	this.row9 = element.all(by.repeater('subCategory in subCategories').row(9));
 
-	//option values
-	this.option0 = element(by.css('option[value="0"]'));
-	this.option1 = element(by.css('option[value="1"]'));
-	this.option2 = element(by.css('option[value="2"]'));
-	this.option3 = element(by.css('option[value="3"]'));
-	this.option4 = element(by.css('option[value="4"]'));
-	this.option5 = element(by.css('option[value="5"]'));
-	this.option6 = element(by.css('option[value="6"]'));
-	this.option7 = element(by.css('option[value="7"]'));
-	this.option8 = element(by.css('option[value="8"]'));
-	this.option9 = element(by.css('option[value="9"]'));
-	this.option10 = element(by.css('option[value="10"]'));
-	this.option11 = element(by.css('option[value="11"]'));
-	this.option12 = element(by.css('option[value="12"]'));
-	this.option13 = element(by.css('option[value="13"]'));
-	this.option14 = element(by.css('option[value="14"]'));
-	this.option15 = element(by.css('option[value="15"]'));
-	this.option16 = element(by.css('option[value="16"]'));
-	this.option17 = element(by.css('option[value="17"]'));
-	this.option18 = element(by.css('option[value="18"]'));
-	this.option19 = element(by.css('option[value="19"]'));
-	this.option20 = element(by.css('option[value="20"]'));
 };
 
 

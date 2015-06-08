@@ -67,6 +67,7 @@ describe('Browse page', function () {
 		app.halt();
 		expect(browser.getCurrentUrl()).toContain('/browse/#!/Necklaces/Pendants');
 		expect(browsePage.selectedFacets.getText()).toEqual('/ Pendants');
+		expect(browsePage.renfinedBy.getText()).toContain('Pendants');
 	});
 
 	it('should have Necklaces sub-category Long Necklaces', function () {
@@ -74,6 +75,7 @@ describe('Browse page', function () {
 		app.halt();
 		expect(browser.getCurrentUrl()).toContain('/browse/#!/Necklaces/Long%20Necklaces');
 		expect(browsePage.selectedFacets.getText()).toEqual('/ Long Necklaces');
+		expect(browsePage.renfinedBy.getText()).toContain('Long Necklaces');
 	});
 
 	it('should have Necklaces sub-category Collar Necklaces', function () {
@@ -81,6 +83,7 @@ describe('Browse page', function () {
 		app.halt();
 		expect(browser.getCurrentUrl()).toContain('/browse/#!/Necklaces/Collar%20Necklaces');
 		expect(browsePage.selectedFacets.getText()).toEqual('/ Collar Necklaces');
+		expect(browsePage.renfinedBy.getText()).toContain('Collar Necklaces');
 	});
 
 	it('should have Necklaces sub-category Name Necklaces', function () {
@@ -88,6 +91,7 @@ describe('Browse page', function () {
 		app.halt();
 		expect(browser.getCurrentUrl()).toContain('/browse/#!/Necklaces/Name%20Necklaces');
 		expect(browsePage.selectedFacets.getText()).toEqual('/ Name Necklaces');
+		expect(browsePage.renfinedBy.getText()).toContain('Name Necklaces');
 	});
 
 	it('should have Necklaces sub-category Other Necklaces', function () {
@@ -95,6 +99,7 @@ describe('Browse page', function () {
 		app.halt();
 		expect(browser.getCurrentUrl()).toContain('/browse/#!/Necklaces/Other%20Necklaces');
 		expect(browsePage.selectedFacets.getText()).toEqual('/ Other Necklaces');
+		expect(browsePage.renfinedBy.getText()).toContain('Other Necklaces');
 	});
 
 	it('should have Necklaces sub-category One of a Kind', function () {
@@ -102,6 +107,7 @@ describe('Browse page', function () {
 		app.halt();
 		expect(browser.getCurrentUrl()).toContain('/browse/#!/Necklaces/One%20of%20a%20Kind');
 		expect(browsePage.selectedFacets.getText()).toEqual('/ One of a Kind');
+		expect(browsePage.renfinedBy.getText()).toContain('One of a Kind');
 	});
 
 	it('should have Necklaces sub-category Bib Necklaces', function () {
@@ -109,6 +115,7 @@ describe('Browse page', function () {
 		app.halt();
 		expect(browser.getCurrentUrl()).toContain('/browse/#!/Necklaces/Bib%20Necklaces');
 		expect(browsePage.selectedFacets.getText()).toEqual('/ Bib Necklaces');
+		expect(browsePage.renfinedBy.getText()).toContain('Bib Necklaces');
 	});
 
 	it('should have Necklaces sub-category Chokers', function () {
@@ -116,6 +123,7 @@ describe('Browse page', function () {
 		app.halt();
 		expect(browser.getCurrentUrl()).toContain('/browse/#!/Necklaces/Chokers');
 		expect(browsePage.selectedFacets.getText()).toEqual('/ Chokers');
+		expect(browsePage.renfinedBy.getText()).toContain('Chokers');
 	});
 
 
@@ -133,6 +141,7 @@ describe('Browse page', function () {
 		app.halt();
 		expect(browser.getCurrentUrl()).toContain('/browse/#!/Earrings/Drop%20Earrings');
 		expect(browsePage.selectedFacets.getText()).toEqual('/ Drop Earrings');
+		expect(browsePage.renfinedBy.getText()).toContain('Drop Earrings');
 	});
 
 	it('should have Earrings sub-category Stud Earrings', function () {
@@ -140,6 +149,7 @@ describe('Browse page', function () {
 		app.halt();
 		expect(browser.getCurrentUrl()).toContain('/browse/#!/Earrings/Stud%20Earrings');
 		expect(browsePage.selectedFacets.getText()).toEqual('/ Stud Earrings');
+		expect(browsePage.renfinedBy.getText()).toContain('Stud Earrings');
 	});
 
 	it('should have Earrings sub-category Statement Earrings', function () {
@@ -147,6 +157,7 @@ describe('Browse page', function () {
 		app.halt();
 		expect(browser.getCurrentUrl()).toContain('/browse/#!/Earrings/Statement%20Earrings');
 		expect(browsePage.selectedFacets.getText()).toEqual('/ Statement Earrings');
+		expect(browsePage.renfinedBy.getText()).toContain('Statement Earrings');
 	});
 
 	it('should have Earrings sub-category Ear Cuffs', function () {
@@ -154,6 +165,7 @@ describe('Browse page', function () {
 		app.halt();
 		expect(browser.getCurrentUrl()).toContain('/browse/#!/Earrings/Ear%20Cuffs');
 		expect(browsePage.selectedFacets.getText()).toEqual('/ Ear Cuffs');
+		expect(browsePage.renfinedBy.getText()).toContain('Ear Cuffs');
 	});
 
 	it('should have Earrings sub-category Other Earrings', function () {
@@ -161,6 +173,7 @@ describe('Browse page', function () {
 		app.halt();
 		expect(browser.getCurrentUrl()).toContain('/browse/#!/Earrings/Other%20Earrings');
 		expect(browsePage.selectedFacets.getText()).toEqual('/ Other Earrings');
+		expect(browsePage.renfinedBy.getText()).toContain('Other Earrings');
 	});
 
 	it('should have Earrings sub-category Gold Hoops', function () {
@@ -168,6 +181,7 @@ describe('Browse page', function () {
 		app.halt();
 		expect(browser.getCurrentUrl()).toContain('/browse/#!/Earrings/Gold%20Hoops');
 		expect(browsePage.selectedFacets.getText()).toEqual('/ Gold Hoops');
+		expect(browsePage.renfinedBy.getText()).toContain('Gold Hoops');
 	});
 
 	it('should have Earrings sub-category Silver Hoops', function () {
@@ -175,6 +189,7 @@ describe('Browse page', function () {
 		app.halt();
 		expect(browser.getCurrentUrl()).toContain('/browse/#!/Earrings/Silver%20Hoops');
 		expect(browsePage.selectedFacets.getText()).toEqual('/ Silver Hoops');
+		expect(browsePage.renfinedBy.getText()).toContain('Silver Hoops');
 	});
 
 
@@ -183,6 +198,7 @@ describe('Browse page', function () {
 		app.halt();
 		expect(browser.getCurrentUrl()).toContain('/browse/#!/Earrings/One%20of%20a%20Kind');
 		expect(browsePage.selectedFacets.getText()).toEqual('/ One of a Kind');
+		expect(browsePage.renfinedBy.getText()).toContain('One of a Kind');
 	});
 
 	it('should have Earrings sub-category Single/Mono Earrings', function () {
@@ -190,6 +206,7 @@ describe('Browse page', function () {
 		app.halt();
 		expect(browser.getCurrentUrl()).toContain('/browse/#!/Earrings/Single/%20Mono%20Earrings');
 		expect(browsePage.selectedFacets.getText()).toEqual('/ Single/ Mono Earrings');
+		expect(browsePage.renfinedBy.getText()).toContain('Single/ Mono Earrings');
 	});
 
 	it('should have Earrings sub-category Chandeliers Earrings', function () {
@@ -197,6 +214,7 @@ describe('Browse page', function () {
 		app.halt();
 		expect(browser.getCurrentUrl()).toContain('/browse/#!/Earrings/Chandeliers%20Earrings');
 		expect(browsePage.selectedFacets.getText()).toEqual('/ Chandeliers Earrings');
+		expect(browsePage.renfinedBy.getText()).toContain('Chandeliers Earrings');
 	});
 
 
@@ -213,6 +231,7 @@ describe('Browse page', function () {
 		app.halt();
 		expect(browser.getCurrentUrl()).toContain('/browse/#!/Bracelets/Bangles');
 		expect(browsePage.selectedFacets.getText()).toEqual('/ Bangles');
+		expect(browsePage.renfinedBy.getText()).toContain('Bangles');
 	});
 
 	it('should have Bracelets sub-category Friendship Bracelets', function () {
@@ -220,6 +239,7 @@ describe('Browse page', function () {
 		app.halt();
 		expect(browser.getCurrentUrl()).toContain('/browse/#!/Bracelets/Friendship%20Bracelets');
 		expect(browsePage.selectedFacets.getText()).toEqual('/ Friendship Bracelets');
+		expect(browsePage.renfinedBy.getText()).toContain('Friendship Bracelets');
 	});
 
 	it('should have Bracelets sub-category Beaded Bracelets', function () {
@@ -227,6 +247,7 @@ describe('Browse page', function () {
 		app.halt();
 		expect(browser.getCurrentUrl()).toContain('/browse/#!/Bracelets/Beaded%20Bracelets');
 		expect(browsePage.selectedFacets.getText()).toEqual('/ Beaded Bracelets');
+		expect(browsePage.renfinedBy.getText()).toContain('Beaded Bracelets');
 	});
 
 	it('should have Bracelets sub-category Gold Cuffs', function () {
@@ -234,6 +255,7 @@ describe('Browse page', function () {
 		app.halt();
 		expect(browser.getCurrentUrl()).toContain('/browse/#!/Bracelets/Gold%20Cuffs');
 		expect(browsePage.selectedFacets.getText()).toEqual('/ Gold Cuffs');
+		expect(browsePage.renfinedBy.getText()).toContain('Gold Cuffs');
 	});
 
 	it('should have Bracelets sub-category Chain Bracelets', function () {
@@ -241,6 +263,7 @@ describe('Browse page', function () {
 		app.halt();
 		expect(browser.getCurrentUrl()).toContain('/browse/#!/Bracelets/Chain%20Bracelets');
 		expect(browsePage.selectedFacets.getText()).toEqual('/ Chain Bracelets');
+		expect(browsePage.renfinedBy.getText()).toContain('Chain Bracelets');
 	});
 
 	it('should have Bracelets sub-category Other Bracelets', function () {
@@ -248,6 +271,7 @@ describe('Browse page', function () {
 		app.halt();
 		expect(browser.getCurrentUrl()).toContain('/browse/#!/Bracelets/Other%20Bracelets');
 		expect(browsePage.selectedFacets.getText()).toEqual('/ Other Bracelets');
+		expect(browsePage.renfinedBy.getText()).toContain('Other Bracelets');
 	});
 
 
@@ -256,6 +280,7 @@ describe('Browse page', function () {
 		app.halt();
 		expect(browser.getCurrentUrl()).toContain('/browse/#!/Bracelets/Statement%20Bracelets');
 		expect(browsePage.selectedFacets.getText()).toEqual('/ Statement Bracelets');
+		expect(browsePage.renfinedBy.getText()).toContain('Statement Bracelets');
 	});
 
 	it('should have Bracelets sub-category Leather Bracelets', function () {
@@ -263,6 +288,7 @@ describe('Browse page', function () {
 		app.halt();
 		expect(browser.getCurrentUrl()).toContain('/browse/#!/Bracelets/Leather%20Bracelets');
 		expect(browsePage.selectedFacets.getText()).toEqual('/ Leather Bracelets');
+		expect(browsePage.renfinedBy.getText()).toContain('Leather Bracelets');
 	});
 
 	it('should have Bracelets sub-category Silver Cuffs', function () {
@@ -270,6 +296,7 @@ describe('Browse page', function () {
 		app.halt();
 		expect(browser.getCurrentUrl()).toContain('/browse/#!/Bracelets/Silver%20Cuffs');
 		expect(browsePage.selectedFacets.getText()).toEqual('/ Silver Cuffs');
+		expect(browsePage.renfinedBy.getText()).toContain('Silver Cuffs');
 	});
 
 	it('should have Necklaces sub-category One of a Kind', function () {
@@ -277,6 +304,7 @@ describe('Browse page', function () {
 		app.halt();
 		expect(browser.getCurrentUrl()).toContain('/browse/#!/Bracelets/One%20of%20a%20Kind');
 		expect(browsePage.selectedFacets.getText()).toEqual('/ One of a Kind');
+		expect(browsePage.renfinedBy.getText()).toContain('One of a Kind');
 	});
 
 	//Rings Category checks
@@ -292,6 +320,7 @@ describe('Browse page', function () {
 		app.halt();
 		expect(browser.getCurrentUrl()).toContain('/browse/#!/Rings/Cocktail%20Rings');
 		expect(browsePage.selectedFacets.getText()).toEqual('/ Cocktail Rings');
+		expect(browsePage.renfinedBy.getText()).toContain('Cocktail Rings');
 	});
 
 	it('should have Rings sub-category Stackable Rings', function () {
@@ -299,6 +328,7 @@ describe('Browse page', function () {
 		app.halt();
 		expect(browser.getCurrentUrl()).toContain('/browse/#!/Rings/Stackable%20Rings');
 		expect(browsePage.selectedFacets.getText()).toEqual('/ Stackable Rings');
+		expect(browsePage.renfinedBy.getText()).toContain('Stackable Rings');
 	});
 
 	it('should have Rings sub-category One of a Kind', function () {
@@ -306,6 +336,7 @@ describe('Browse page', function () {
 		app.halt();
 		expect(browser.getCurrentUrl()).toContain('/browse/#!/Rings/One%20of%20a%20Kind');
 		expect(browsePage.selectedFacets.getText()).toEqual('/ One of a Kind');
+		expect(browsePage.renfinedBy.getText()).toContain('One of a Kind');
 	});
 
 	it('should have Rings sub-category Double Rings', function () {
@@ -313,6 +344,7 @@ describe('Browse page', function () {
 		app.halt();
 		expect(browser.getCurrentUrl()).toContain('/browse/#!/Rings/Double%20Rings');
 		expect(browsePage.selectedFacets.getText()).toEqual('/ Double Rings');
+		expect(browsePage.renfinedBy.getText()).toContain('Double Rings');
 	});
 
 	it('should have Rings sub-category Other Rings', function () {
@@ -320,6 +352,7 @@ describe('Browse page', function () {
 		app.halt();
 		expect(browser.getCurrentUrl()).toContain('/browse/#!/Rings/Other%20Rings');
 		expect(browsePage.selectedFacets.getText()).toEqual('/ Other Rings');
+		expect(browsePage.renfinedBy.getText()).toContain('Other Rings');
 	});
 
 	it('should have Rings sub-category Knuckle/Midi Rings', function () {
@@ -327,6 +360,7 @@ describe('Browse page', function () {
 		app.halt();
 		expect(browser.getCurrentUrl()).toContain('/browse/#!/Rings/Knuckle/Midi%20Rings');
 		expect(browsePage.selectedFacets.getText()).toEqual('/ Knuckle/Midi Rings');
+		expect(browsePage.renfinedBy.getText()).toContain('Knuckle/Midi Rings');
 	});
 
 	it('should have Rings sub-category Signet Rings', function () {
@@ -334,6 +368,7 @@ describe('Browse page', function () {
 		app.halt();
 		expect(browser.getCurrentUrl()).toContain('/browse/#!/Rings/Signet%20Rings');
 		expect(browsePage.selectedFacets.getText()).toEqual('/ Signet Rings');
+		expect(browsePage.renfinedBy.getText()).toContain('Signet Rings');
 	});
 
 	it('should have Rings sub-category Hand Jewelry', function () {
@@ -341,6 +376,7 @@ describe('Browse page', function () {
 		app.halt();
 		expect(browser.getCurrentUrl()).toContain('/browse/#!/Rings/Hand%20Jewelry');
 		expect(browsePage.selectedFacets.getText()).toEqual('/ Hand Jewelry');
+		expect(browsePage.renfinedBy.getText()).toContain('Hand Jewelry');
 	});
 
 
@@ -356,6 +392,7 @@ describe('Browse page', function () {
 		app.halt();
 		expect(browser.getCurrentUrl()).toContain('/browse/#!/Bags/Shoulder%20Bags');
 		expect(browsePage.selectedFacets.getText()).toEqual('/ Shoulder Bags');
+		expect(browsePage.renfinedBy.getText()).toContain('Shoulder Bags');
 	});
 
 	it('should have Bags sub-category Clutch Bags', function () {
@@ -363,6 +400,7 @@ describe('Browse page', function () {
 		app.halt();
 		expect(browser.getCurrentUrl()).toContain('/browse/#!/Bags/Clutch%20Bags');
 		expect(browsePage.selectedFacets.getText()).toEqual('/ Clutch Bags');
+		expect(browsePage.renfinedBy.getText()).toContain('Clutch Bags');
 	});
 
 	it('should have Bags sub-category Backpacks', function () {
@@ -370,6 +408,7 @@ describe('Browse page', function () {
 		app.halt();
 		expect(browser.getCurrentUrl()).toContain('/browse/#!/Bags/Backpacks');
 		expect(browsePage.selectedFacets.getText()).toEqual('/ Backpacks');
+		expect(browsePage.renfinedBy.getText()).toContain('Backpacks');
 	});
 
 	it('should have Bags sub-category Totes', function () {
@@ -377,6 +416,7 @@ describe('Browse page', function () {
 		app.halt();
 		expect(browser.getCurrentUrl()).toContain('/browse/#!/Bags/Totes');
 		expect(browsePage.selectedFacets.getText()).toEqual('/ Totes');
+		expect(browsePage.renfinedBy.getText()).toContain('Totes');
 	});
 
 	it('should have Bags sub-category Other Bags', function () {
@@ -384,6 +424,7 @@ describe('Browse page', function () {
 		app.halt();
 		expect(browser.getCurrentUrl()).toContain('/browse/#!/Bags/Other%20Bags');
 		expect(browsePage.selectedFacets.getText()).toEqual('/ Other Bags');
+		expect(browsePage.renfinedBy.getText()).toContain('Other Bags');
 	});
 
 	it('should have Bags sub-category Cross Body Bags', function () {
@@ -391,6 +432,7 @@ describe('Browse page', function () {
 		app.halt();
 		expect(browser.getCurrentUrl()).toContain('/browse/#!/Bags/Cross%20Body%20Bags');
 		expect(browsePage.selectedFacets.getText()).toEqual('/ Cross Body Bags');
+		expect(browsePage.renfinedBy.getText()).toContain('Cross Body Bags');
 	});
 
 	it('should have Bags sub-category Satchels', function () {
@@ -398,6 +440,7 @@ describe('Browse page', function () {
 		app.halt();
 		expect(browser.getCurrentUrl()).toContain('/browse/#!/Bags/Satchels');
 		expect(browsePage.selectedFacets.getText()).toEqual('/ Satchels');
+		expect(browsePage.renfinedBy.getText()).toContain('Satchels');
 	});
 
 	it('should have Bags sub-category Weekenders / Travel bags', function () {
@@ -405,6 +448,7 @@ describe('Browse page', function () {
 		app.halt();
 		expect(browser.getCurrentUrl()).toContain('/browse/#!/Bags/Weekenders%20/%20Travel%20bags');
 		expect(browsePage.selectedFacets.getText()).toEqual('/ Weekenders / Travel bags');
+		expect(browsePage.renfinedBy.getText()).toContain('Weekenders / Travel bags');
 	});
 
 	it('should have Bags sub-category Box Clutches', function () {
@@ -412,6 +456,7 @@ describe('Browse page', function () {
 		app.halt();
 		expect(browser.getCurrentUrl()).toContain('/browse/#!/Bags/Box%20Clutches');
 		expect(browsePage.selectedFacets.getText()).toEqual('/ Box Clutches');
+		expect(browsePage.renfinedBy.getText()).toContain('Box Clutches');
 	});
 
 	it('should have Bags sub-category Pouches', function () {
@@ -419,6 +464,7 @@ describe('Browse page', function () {
 		app.halt();
 		expect(browser.getCurrentUrl()).toContain('/browse/#!/Bags/Pouches');
 		expect(browsePage.selectedFacets.getText()).toEqual('/ Pouches');
+		expect(browsePage.renfinedBy.getText()).toContain('Pouches');
 	});
 
 
@@ -434,6 +480,7 @@ describe('Browse page', function () {
 		app.halt();
 		expect(browser.getCurrentUrl()).toContain('/browse/#!/Scarves/Silk%20Scarves');
 		expect(browsePage.selectedFacets.getText()).toEqual('/ Silk Scarves');
+		expect(browsePage.renfinedBy.getText()).toContain('Silk Scarves');
 	});
 
 	it('should have Scarves sub-category Printed Scarves', function () {
@@ -441,6 +488,7 @@ describe('Browse page', function () {
 		app.halt();
 		expect(browser.getCurrentUrl()).toContain('/browse/#!/Scarves/Printed%20Scarves');
 		expect(browsePage.selectedFacets.getText()).toEqual('/ Printed Scarves');
+		expect(browsePage.renfinedBy.getText()).toContain('Printed Scarves');
 	});
 
 	it('should have Scarves sub-category Wool Scarves', function () {
@@ -448,6 +496,7 @@ describe('Browse page', function () {
 		app.halt();
 		expect(browser.getCurrentUrl()).toContain('/browse/#!/Scarves/Wool%20Scarves');
 		expect(browsePage.selectedFacets.getText()).toEqual('/ Wool Scarves');
+		expect(browsePage.renfinedBy.getText()).toContain('Wool Scarves');
 	});
 
 	it('should have Scarves sub-category Pleated Scarves', function () {
@@ -455,6 +504,7 @@ describe('Browse page', function () {
 		app.halt();
 		expect(browser.getCurrentUrl()).toContain('/browse/#!/Scarves/Pleated%20Scarves');
 		expect(browsePage.selectedFacets.getText()).toEqual('/ Pleated Scarves');
+		expect(browsePage.renfinedBy.getText()).toContain('Pleated Scarves');
 	});
 
 	it('should have Scarves sub-category Other Scarves', function () {
@@ -462,6 +512,7 @@ describe('Browse page', function () {
 		app.halt();
 		expect(browser.getCurrentUrl()).toContain('/browse/#!/Scarves/Other%20Scarves');
 		expect(browsePage.selectedFacets.getText()).toEqual('/ Other Scarves');
+		expect(browsePage.renfinedBy.getText()).toContain('Other Scarves');
 	});
 
 	it('should have Scarves sub-category Knitted Scarves', function () {
@@ -469,6 +520,7 @@ describe('Browse page', function () {
 		app.halt();
 		expect(browser.getCurrentUrl()).toContain('/browse/#!/Scarves/Knitted%20Scarves');
 		expect(browsePage.selectedFacets.getText()).toEqual('/ Knitted Scarves');
+		expect(browsePage.renfinedBy.getText()).toContain('Knitted Scarves');
 	});
 
 	it('should have Scarves sub-category Cotton Scarves', function () {
@@ -476,6 +528,7 @@ describe('Browse page', function () {
 		app.halt();
 		expect(browser.getCurrentUrl()).toContain('/browse/#!/Scarves/Cotton%20Scarves');
 		expect(browsePage.selectedFacets.getText()).toEqual('/ Cotton Scarves');
+		expect(browsePage.renfinedBy.getText()).toContain('Cotton Scarves');
 	});
 
 
@@ -484,6 +537,8 @@ describe('Browse page', function () {
 		app.halt();
 		expect(browser.getCurrentUrl()).toContain('/browse/#!/Scarves/Embellished%20Scarves');
 		expect(browsePage.selectedFacets.getText()).toEqual('/ Embellished Scarves');
+		expect(browsePage.renfinedBy.getText()).toContain('Embellished Scarves');
+
 	});
 
 	it('should have Scarves sub-category Woven Scarves', function () {
@@ -491,6 +546,7 @@ describe('Browse page', function () {
 		app.halt();
 		expect(browser.getCurrentUrl()).toContain('/browse/#!/Scarves/Woven%20Scarves');
 		expect(browsePage.selectedFacets.getText()).toEqual('/ Woven Scarves');
+		expect(browsePage.renfinedBy.getText()).toContain('Woven Scarves');
 	});
 
 	//Hat category check
@@ -505,6 +561,7 @@ describe('Browse page', function () {
 		app.halt();
 		expect(browser.getCurrentUrl()).toContain('/browse/#!/Hats/Fascinators');
 		expect(browsePage.selectedFacets.getText()).toEqual('/ Fascinators');
+		expect(browsePage.renfinedBy.getText()).toContain('Fascinators');
 	});
 
 	it('should have Hats sub-category Small Hair Accessories', function () {
@@ -512,6 +569,7 @@ describe('Browse page', function () {
 		app.halt();
 		expect(browser.getCurrentUrl()).toContain('/browse/#!/Hats/Small%20Hair%20Accessories');
 		expect(browsePage.selectedFacets.getText()).toEqual('/ Small Hair Accessories');
+		expect(browsePage.renfinedBy.getText()).toContain('Small Hair Accessories');
 	});
 
 	it('should have Hats sub-category Straw Hats', function () {
@@ -519,6 +577,7 @@ describe('Browse page', function () {
 		app.halt();
 		expect(browser.getCurrentUrl()).toContain('/browse/#!/Hats/Straw%20Hats');
 		expect(browsePage.selectedFacets.getText()).toEqual('/ Straw Hats');
+		expect(browsePage.renfinedBy.getText()).toContain('Straw Hats');
 	});
 
 	it('should have Hats sub-category Headbands', function () {
@@ -526,6 +585,7 @@ describe('Browse page', function () {
 		app.halt();
 		expect(browser.getCurrentUrl()).toContain('/browse/#!/Hats/Headbands');
 		expect(browsePage.selectedFacets.getText()).toEqual('/ Headbands');
+		expect(browsePage.renfinedBy.getText()).toContain('Headbands');
 	});
 
 	it('should have Hats sub-category Other Hats', function () {
@@ -533,6 +593,7 @@ describe('Browse page', function () {
 		app.halt();
 		expect(browser.getCurrentUrl()).toContain('/browse/#!/Hats/Other%20Hats');
 		expect(browsePage.selectedFacets.getText()).toEqual('/ Other Hats');
+		expect(browsePage.renfinedBy.getText()).toContain('Other Hats');
 	});
 
 	it('should have Hats sub-category Caps', function () {
@@ -540,6 +601,7 @@ describe('Browse page', function () {
 		app.halt();
 		expect(browser.getCurrentUrl()).toContain('/browse/#!/Hats/Caps');
 		expect(browsePage.selectedFacets.getText()).toEqual('/ Caps');
+		expect(browsePage.renfinedBy.getText()).toContain('Caps');
 	});
 
 	it('should have Hats sub-category Pillbox Hats', function () {
@@ -547,6 +609,7 @@ describe('Browse page', function () {
 		app.halt();
 		expect(browser.getCurrentUrl()).toContain('/browse/#!/Hats/Pillbox%20Hats');
 		expect(browsePage.selectedFacets.getText()).toEqual('/ Pillbox Hats');
+		expect(browsePage.renfinedBy.getText()).toContain('Pillbox Hats');
 	});
 
 	it('should have Hats sub-category Fedoras', function () {
@@ -554,6 +617,7 @@ describe('Browse page', function () {
 		app.halt();
 		expect(browser.getCurrentUrl()).toContain('/browse/#!/Hats/Fedoras');
 		expect(browsePage.selectedFacets.getText()).toEqual('/ Fedoras');
+		expect(browsePage.renfinedBy.getText()).toContain('Fedoras');
 	});
 
 	it('should have Hats sub-category Beanies', function () {
@@ -561,6 +625,7 @@ describe('Browse page', function () {
 		app.halt();
 		expect(browser.getCurrentUrl()).toContain('/browse/#!/Hats/Beanies');
 		expect(browsePage.selectedFacets.getText()).toEqual('/ Beanies');
+		expect(browsePage.renfinedBy.getText()).toContain('Beanies');
 	});
 
 	it('should have Hats sub-category Berets', function () {
@@ -568,6 +633,7 @@ describe('Browse page', function () {
 		app.halt();
 		expect(browser.getCurrentUrl()).toContain('/browse/#!/Hats/Berets');
 		expect(browsePage.selectedFacets.getText()).toEqual('/ Berets');
+		expect(browsePage.renfinedBy.getText()).toContain('Berets');
 	});
 
 
@@ -583,6 +649,7 @@ describe('Browse page', function () {
 		app.halt();
 		expect(browser.getCurrentUrl()).toContain('/browse/#!/Accessories/Other%20Accessories');
 		expect(browsePage.selectedFacets.getText()).toEqual('/ Other Accessories');
+		expect(browsePage.renfinedBy.getText()).toContain('Other Accessories');
 	});
 
 	it('should have Accessories sub-category Cufflinks', function () {
@@ -590,6 +657,7 @@ describe('Browse page', function () {
 		app.halt();
 		expect(browser.getCurrentUrl()).toContain('/browse/#!/Accessories/Cufflinks');
 		expect(browsePage.selectedFacets.getText()).toEqual('/ Cufflinks');
+		expect(browsePage.renfinedBy.getText()).toContain('Cufflinks');
 	});
 
 	it('should have Accessories sub-category Laptop Covers', function () {
@@ -597,6 +665,7 @@ describe('Browse page', function () {
 		app.halt();
 		expect(browser.getCurrentUrl()).toContain('/browse/#!/Accessories/Laptop%20Covers');
 		expect(browsePage.selectedFacets.getText()).toEqual('/ Laptop Covers');
+		expect(browsePage.renfinedBy.getText()).toContain('Laptop Covers');
 	});
 
 	it('should have Accessories sub-category Wallets & Key Rings', function () {
@@ -604,6 +673,7 @@ describe('Browse page', function () {
 		app.halt();
 		expect(browser.getCurrentUrl()).toContain('/browse/#!/Accessories/Wallets%20&%20Key%20Rings');
 		expect(browsePage.selectedFacets.getText()).toEqual('/ Wallets & Key Rings');
+		expect(browsePage.renfinedBy.getText()).toContain('Wallets & Key Rings');
 	});
 
 	it('should have Accessories sub-category Phone Covers', function () {
@@ -611,6 +681,7 @@ describe('Browse page', function () {
 		app.halt();
 		expect(browser.getCurrentUrl()).toContain('/browse/#!/Accessories/Phone%20Covers');
 		expect(browsePage.selectedFacets.getText()).toEqual('/ Phone Covers');
+		expect(browsePage.renfinedBy.getText()).toContain('Phone Covers');
 	});
 
 	it('should have Accessories sub-category iPad Covers', function () {
@@ -618,6 +689,7 @@ describe('Browse page', function () {
 		app.halt();
 		expect(browser.getCurrentUrl()).toContain('/browse/#!/Accessories/iPad%20Covers');
 		expect(browsePage.selectedFacets.getText()).toEqual('/ iPad Covers');
+		expect(browsePage.renfinedBy.getText()).toContain('iPad Covers');
 	});
 
 	it('should have Accessories sub-category Ties', function () {
@@ -625,6 +697,7 @@ describe('Browse page', function () {
 		app.halt();
 		expect(browser.getCurrentUrl()).toContain('/browse/#!/Accessories/Ties');
 		expect(browsePage.selectedFacets.getText()).toEqual('/ Ties');
+		expect(browsePage.renfinedBy.getText()).toContain('Ties');
 	});
 
 	it('should have Accessories sub-category Collars', function () {
@@ -632,6 +705,7 @@ describe('Browse page', function () {
 		app.halt();
 		expect(browser.getCurrentUrl()).toContain('/browse/#!/Accessories/Collars');
 		expect(browsePage.selectedFacets.getText()).toEqual('/ Collars');
+		expect(browsePage.renfinedBy.getText()).toContain('Collars');
 	});
 
 	it('should have Accessories sub-category Belts', function () {
@@ -639,6 +713,7 @@ describe('Browse page', function () {
 		app.halt();
 		expect(browser.getCurrentUrl()).toContain('/browse/#!/Accessories/Belts');
 		expect(browsePage.selectedFacets.getText()).toEqual('/ Belts');
+		expect(browsePage.renfinedBy.getText()).toContain('Belts');
 	});
 
 	it('should have Accessories sub-category Brooches', function () {
@@ -646,6 +721,7 @@ describe('Browse page', function () {
 		app.halt();
 		expect(browser.getCurrentUrl()).toContain('/browse/#!/Accessories/Brooches');
 		expect(browsePage.selectedFacets.getText()).toEqual('/ Brooches');
+		expect(browsePage.renfinedBy.getText()).toContain('Brooches');
 	});
 
 
