@@ -2,17 +2,19 @@
 var BrowsePage = function () {
 	//Most popular - a-z sort
 	this.azSort = element(by.id('browse+sort-date'));
+	
 	//No of results sort
 	this.sortResultsNo = element(by.id('browse+show-results'));
-	this.twentyFourItems = element(by.id('browse+show-results')).$('[value="0"]');
-	this.thirtySixItems = element(by.id('browse+show-results')).$('[value="1"]');
-	this.fourtyEightItems = element(by.id('browse+show-results')).$('[value="2"]');
-	this.sixtyItems = element(by.id('browse+show-results')).$('[value="3"]');
+	this.twelveItems = element(by.id('browse+show-results')).$('[value="0"]');
+	this.twentyFourItems = element(by.id('browse+show-results')).$('[value="1"]');
+	this.thirtySixItems = element(by.id('browse+show-results')).$('[value="2"]');
+	this.fourtyEightItems = element(by.id('browse+show-results')).$('[value="3"]');
+	this.sixtyItems = element(by.id('browse+show-results')).$('[value="4"]');
 	this.categories = element.all(by.repeater('category in categories'));
 	this.selectedFacets = element(by.binding('currentlySelectedFacets.subcategory'));
 	this.products = element.all(by.repeater('product in products'));
-	this.searchBar = element(by.css('.search-bar'));
-	this.renfinedBy = element(by.css('.refined-tags-container'))
+	this.searchBar = element(by.css('input.browse-searchbar'));
+	this.renfinedBy = element(by.css('.refined-tags-container'));
 
 	
 	
@@ -27,6 +29,7 @@ var BrowsePage = function () {
 	this.accessories = element.all(by.repeater('category in categories').row(7));
 	this.allItems = element(by.css('.all-items-title'));
 	this.showMore = element(by.css('.subcategory.show-more'));
+	this.highlightGreen = element(by.css('.highlight-green'));
 	
 	
 
@@ -43,6 +46,8 @@ var BrowsePage = function () {
 	this.row8 = element.all(by.repeater('subCategory in subCategories').row(8));
 	this.row9 = element.all(by.repeater('subCategory in subCategories').row(9));
 
+
+	
 };
 
 
@@ -104,12 +109,12 @@ BrowsePage.prototype.accessoriesCheck = function () {
 
 function selectDropdownByNumber(element, index, milliseconds) {
     element.findElements(by.tagName('option'))
-      .then(function(options) {
+		.then(function (options) {
         options[index].click();
-      });
+	});
     if (typeof milliseconds !== 'undefined') {
-      browser.sleep(milliseconds);
-   }
+		browser.sleep(milliseconds);
+	}
 }
 
 
