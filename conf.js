@@ -66,7 +66,7 @@
     },
 
     onPrepare: function() {
-      browser.driver.manage().window().setSize(1440, 940);
+      browser.driver.manage().window().setSize(1800, 1080);
 
       //Jasmine spec reporter
       //https://www.npmjs.com/package/jasmine-spec-reporter

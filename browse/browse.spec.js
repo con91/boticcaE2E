@@ -11,8 +11,8 @@ describe('Browse page', function () {
 	it('should display a search bar', function () {
 		expect(browsePage.searchBar.isPresent()).toBe(true);
 	});
-	
-	
+
+
 	it('should display a Most popular and az sort option', function () {
 		expect(browsePage.azSort.isPresent()).toBe(true);
 	});
@@ -31,7 +31,7 @@ describe('Browse page', function () {
 		app.halt();
 		expect(browsePage.products.count()).toEqual(12);
 	});
-	
+
 	it('should display 24 products when 24 sort is selected', function () {
 		browsePage.twentyFourItems.click();
 		app.halt();
@@ -56,22 +56,28 @@ describe('Browse page', function () {
 		expect(browsePage.products.count()).toEqual(60);
 	});
 
+	it('should display double the current results, when more products is clicked', function () {
+		browsePage.loadMoreButton.click();
+		app.halt();
+		expect(browsePage.products.count()).toEqual(120);
+	});
+
 	it('should display eight categories', function () {
 		expect(browsePage.categories.count()).toEqual(8);
 	});
-	
+
 	it('should have green highlight on sub-category selection', function () {
 		browsePage.necklaces.click();
 		app.halt();
 		browsePage.row1.click();
 		expect(browsePage.highlightGreen.isPresent()).toBe(true);
 	});
-	
+
 	it('should not have green highlight on sub-category selection when it is clicked again', function () {
 		browsePage.row1.click();
 		app.halt();
 		expect(browsePage.highlightGreen.isPresent()).toBe(false);
 		browsePage.allItems.click();
 	});
-	
+
 });

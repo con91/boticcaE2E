@@ -10,11 +10,16 @@ var BrowsePage = function () {
 	this.thirtySixItems = element(by.id('browse+show-results')).$('[value="2"]');
 	this.fourtyEightItems = element(by.id('browse+show-results')).$('[value="3"]');
 	this.sixtyItems = element(by.id('browse+show-results')).$('[value="4"]');
+	//general UI locators
 	this.categories = element.all(by.repeater('category in categories'));
 	this.selectedFacets = element(by.binding('currentlySelectedFacets.subcategory'));
 	this.products = element.all(by.repeater('product in products'));
 	this.searchBar = element(by.css('input.browse-searchbar'));
 	this.renfinedBy = element(by.css('.refined-tags-container'));
+	this.designerFlagIcon = element(by.css('.flag-icon-ch'));
+	this.chevronHighlight = element(by.css('.chevron-highlight'));
+	this.productImage = element(by.id('product-sku+product-image'));
+	this.loadMoreButton = element(by.id('browse+more-products'));
 
 	
 	
