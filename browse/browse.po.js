@@ -51,6 +51,17 @@ var BrowsePage = function () {
 	this.row8 = element.all(by.repeater('subCategory in subCategories').row(8));
 	this.row9 = element.all(by.repeater('subCategory in subCategories').row(9));
 
+	//Filters locators
+	this.material = element.all(by.css('div[ng-if="materials.length > 0"]'));
+	this.gemstone = element(by.css('div[ng-if="gemstones.length > 0"]'));
+	this.materialFilter = element(by.binding('material'));
+	this.gemstoneFilter = element(by.binding('gemstone'));
+	this.colorFilter = element(by.binding('color'));
+	this.designerFilter = element(by.binding('designer'));
+	this.countryFilter = element(by.binding('country'));
+	
+	
+	
 
 
 };

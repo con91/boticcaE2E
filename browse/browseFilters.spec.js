@@ -10,10 +10,23 @@ describe('Browse page - Filters', function () {
 
 
 
-	it('should have Price filter', function () {
-		browsePage.price.click();
-		expect(browsePage.price.isPresent()).toBe(true);
-			app.halt();
+	it('should have Materials filter', function () {
+		expect(browsePage.materialFilter.isPresent()).toBe(true);
+	});
+	
+	it('should have Gemstone filter', function () {
+		expect(browsePage.gemstoneFilter.isPresent()).toBe(true);
 	});
 		
+	it('should have Colors filter', function () {
+		expect(browsePage.colorFilter.isPresent()).toBe(true);
+	});
+	
+	it('should have Designer filter', function () {
+		expect(browsePage.designerFilter.isPresent()).toBe(true);
+	});
+	
+	it('should have Country of Origin filter', function () {
+		expect(browsePage.countryFilter.isPresent()).toBe(true);
+	});	
 });
