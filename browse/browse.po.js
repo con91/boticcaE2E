@@ -12,7 +12,7 @@ var BrowsePage = function () {
 	this.sixtyItems = element(by.id('browse+show-results')).$('[value="4"]');
 	//general UI locators
 	this.categories = element.all(by.repeater('category in categories'));
-	this.selectedFacets = element(by.binding('currentlySelectedFacets.subcategory'));
+	this.selectedFacets = element(by.css('span[ng-if="currentlySelectedFacets.subcategory.length > 0"]'));
 	this.products = element.all(by.repeater('product in products'));
 	this.searchBar = element(by.css('input.browse-searchbar'));
 	this.renfinedBy = element(by.css('.refined-tags-container'));
@@ -52,7 +52,7 @@ var BrowsePage = function () {
 	this.row9 = element.all(by.repeater('subCategory in subCategories').row(9));
 
 
-	
+
 };
 
 
