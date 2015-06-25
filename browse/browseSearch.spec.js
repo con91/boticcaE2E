@@ -34,19 +34,5 @@ describe('Browse page - Search', function () {
 		expect(browsePage.highlightGreen.isPresent()).toBe(true);
 	});
 	
-	// it('should be able to search for a sub-category', function () {
-	// 	app.halt();
-	// 	browsePage.searchBar.sendKeys("Backpacks", protractor.Key.ENTER);
-	// 	app.halt();
-	// 	expect(browsePage.renfinedBy.getText()).toContain('Backpacks');
-	// 	expect(browsePage.highlightGreen.isPresent()).toBe(true);
-	// });
-	
-	// it('should have a no items found page in search', function () {
-	// 	app.halt();
-	// 	browsePage.searchBar.sendKeys("Backpacks", protractor.Key.ENTER);
-	// 	app.halt();
-	// 	expect(browsePage.renfinedBy;
-	// });
 	
 });
