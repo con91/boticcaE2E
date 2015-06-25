@@ -13,12 +13,13 @@ describe('Browse page - Earrings', function () {
 
 	it('should have a category, Earrings', function () {
 		browsePage.earringsCheck();
+		app.halt();
 		expect(browser.getCurrentUrl()).toContain('/browse/#/Earrings/');
 	});
 
 	it('should have Earrings sub-category Ear Jackets', function () {
-		browsePage.showMore.click();
 		browsePage.row0.click();
+		browsePage.showMore.click();
 		app.halt();
 		expect(browser.getCurrentUrl()).toContain('/browse/#/Earrings/Ear%20Jackets');
 		// expect(browsePage.selectedFacets.getText()).toContain('/ Ear Jackets'); //Ear jackets fails on this due to it being a designer page

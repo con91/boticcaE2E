@@ -17,8 +17,8 @@ describe('Browse page - Rings', function () {
 	});
 
 	it('should have Rings sub-category Cocktail Rings', function () {
-		browsePage.showMore.click();
 		browsePage.row0.click();
+		browsePage.showMore.click();
 		app.halt();
 		expect(browser.getCurrentUrl()).toContain('/browse/#/Rings/Cocktail%20Rings');
 		expect(browsePage.selectedFacets.getText()).toContain('/ Cocktail Rings');

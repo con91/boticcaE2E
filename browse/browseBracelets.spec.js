@@ -17,8 +17,8 @@ describe('Browse page - Bracelets', function () {
 
 	it('should have Bracelets sub-category bangles', function () {
 		browsePage.row0.click();
-		app.halt();
 		browsePage.showMore.click();
+		app.halt();
 		expect(browser.getCurrentUrl()).toContain('/browse/#/Bracelets/Bangles');
 		expect(browsePage.selectedFacets.getText()).toContain('/ Bangles');
 		expect(browsePage.renfinedBy.getText()).toContain('Bangles');

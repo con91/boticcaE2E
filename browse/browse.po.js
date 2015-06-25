@@ -51,7 +51,8 @@ var BrowsePage = function () {
 	this.row11 = element.all(by.repeater('subCategory in subCategories').row(11));
 	this.row12 = element.all(by.repeater('subCategory in subCategories').row(12));
 	this.row13 = element.all(by.repeater('subCategory in subCategories').row(13));
-
+	this.row14 = element.all(by.repeater('subCategory in subCategories').row(14));
+	
 	//Filters locators
 	this.material = element.all(by.css('div[ng-if="materials.length > 0"]'));
 	this.gemstone = element(by.css('div[ng-if="gemstones.length > 0"]'));
