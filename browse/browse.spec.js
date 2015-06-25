@@ -6,7 +6,7 @@ describe('Browse page', function () {
 
 	var app = new Application();
 	var browsePage = new BrowsePage();
-	browsePage.get();
+	app.getBrowse();
 
 	it('should display a search bar', function () {
 		expect(browsePage.searchBar.isPresent()).toBe(true);

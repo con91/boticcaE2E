@@ -20,6 +20,10 @@ var Application = function() {
 	//Footer locators
 	this.footer = element(by.css('.footer'));
 
+
+
+
+
 };
 
 //E2E application wide functions
@@ -30,29 +34,29 @@ Application.prototype.get = function() {
 };
 
 
-//get the browse page directly calling it in your spec
+// //get the browse page directly calling it in your spec
 Application.prototype.getBrowse = function() {
 
 	browser.get('https://boticca.com/browse/');
 };
 
-//get the designers page directly calling it in your spec
-Application.prototype.getDesigners = function() {
+// //get the designers page directly calling it in your spec
+// Application.prototype.getDesigners = function() {
 
-	browser.get('https://boticca.com/designers/');
-};
+// 	browser.get('https://boticca.com/designers/');
+// };
 
-//get the stories page directly calling it in your spec
-Application.prototype.getStories = function() {
+// //get the stories page directly calling it in your spec
+// Application.prototype.getStories = function() {
 
-	browser.get('https://boticca.com/stories/');
-};
+// 	browser.get('https://boticca.com/stories/');
+// };
 
-//get the private sales page directly calling it in your spec
-Application.prototype.getPrivateSales = function() {
+// //get the private sales page directly calling it in your spec
+// Application.prototype.getPrivateSales = function() {
 
-	browser.get('https://boticca.com/private-sales/');
-};
+// 	browser.get('https://boticca.com/private-sales/');
+// };
 
 
 Application.prototype.halt = function() {

@@ -22,7 +22,7 @@
     // traffic through a sauce connect tunnel). Default is
     // ondemand.saucelabs.com:80/wd/hub
 
-    //sauceSeleniumAddress: 'ondemand.saucelabs.com:80/wd/hub',
+    // sauceSeleniumAddress: 'ondemand.saucelabs.com:80/wd/hub',
 
     seleniumAddress: 'http://127.0.0.1:4444/wd/hub/',
 
@@ -44,7 +44,7 @@
       // files to be run by this set of capabilities will run in parallel).
       // Default is false.
       // Note: if this is false we get a single report totalling all specs.
-      shardTestFiles: false,
+      shardTestFiles: true,
 
       // Maximum number of browser instances that can run in parallel for this
       // set of capabilities. This is only needed if shardTestFiles is true.
@@ -55,12 +55,13 @@
     suites: {
       application: './application/application.spec.js',
       homepage: './homepage/homepage.spec.js',
-      newIn: './newIn/newIn.spec.js',
-      browse: './browse/browse.spec.js',
-      search: './search/search.spec.js',
-      stories: './stories/storiesPage.spec.js',
-      designers: './designers/designers.spec.js',
-      privateSales: './privateSales/privateSales.spec.js'
+      // newIn: './newIn/newIn.spec.js',
+      browse: './browse/*.spec.js',
+      // search: './search/search.spec.js',
+      // stories: './stories/storiesPage.spec.js',
+      // designers: './designers/designers.spec.js',
+      // privateSales: './privateSales/privateSales.spec.js',
+      product: './product/product.spec.js'
 
 
     },
